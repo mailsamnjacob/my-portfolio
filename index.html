@@ -21,13 +21,16 @@
             @apply text-lg text-slate-600 mb-12 text-center max-w-2xl mx-auto;
         }
         .case-study-card {
-            @apply bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300;
+            @apply bg-white rounded-xl shadow-lg overflow-hidden;
         }
         .service-card {
             @apply bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center;
         }
         .stat-card {
             @apply bg-emerald-50 p-6 rounded-lg text-center;
+        }
+        .tool-logo {
+            @apply h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300;
         }
     </style>
 </head>
@@ -40,6 +43,7 @@
             <div>
                 <a href="#services" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
                 <a href="#portfolio" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+                 <a href="#tools" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tools</a>
                 <a href="#education" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Education</a>
                 <a href="#contact" class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">Contact Me</a>
             </div>
@@ -50,8 +54,8 @@
 
         <!-- Hero Section -->
         <section id="home" class="text-center py-16">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">E-commerce & Digital Marketing Consultant</h1>
-            <p class="text-xl text-slate-600 max-w-3xl mx-auto">I help businesses scale their online presence and accelerate revenue growth through data-driven digital strategies and operational excellence.</p>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">E-commerce, Performance & Digital Marketing Consultant</h1>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto">I help businesses scale their online presence and accelerate revenue growth through data-driven performance marketing and operational excellence.</p>
         </section>
 
         <!-- Services Section -->
@@ -59,57 +63,38 @@
             <h2 class="section-title">What I Can Do For You</h2>
             <p class="section-subtitle">I offer a comprehensive suite of services designed to build, market, and grow your online business from the ground up.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="mb-4 text-emerald-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Digital Marketing Strategy</h3>
-                    <p class="text-slate-600">Holistic plans to increase traffic, generate leads, and boost sales.</p>
+                 <div class="service-card">
+                    <div class="mb-4 text-emerald-500"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Performance Marketing</h3>
+                    <p class="text-slate-600">ROI-focused campaigns across paid search, social, and display channels.</p>
                 </div>
-                <!-- Service 2 -->
                 <div class="service-card">
-                    <div class="mb-4 text-emerald-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                    </div>
+                    <div class="mb-4 text-emerald-500"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg></div>
                     <h3 class="text-xl font-semibold text-slate-800 mb-2">SEO & SEM/PPC</h3>
                     <p class="text-slate-600">Driving targeted organic and paid traffic through search engines.</p>
                 </div>
-                <!-- Service 3 -->
                 <div class="service-card">
-                    <div class="mb-4 text-emerald-500">
-                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283-.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                    </div>
+                    <div class="mb-4 text-emerald-500"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283-.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div>
                     <h3 class="text-xl font-semibold text-slate-800 mb-2">Social Media Marketing</h3>
                     <p class="text-slate-600">Building engaged communities and running effective ad campaigns.</p>
                 </div>
-                <!-- Service 4 -->
                 <div class="service-card">
-                     <div class="mb-4 text-emerald-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                    </div>
+                     <div class="mb-4 text-emerald-500"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg></div>
                     <h3 class="text-xl font-semibold text-slate-800 mb-2">Email Marketing & CRM</h3>
                     <p class="text-slate-600">Nurturing leads and increasing customer lifetime value.</p>
                 </div>
-                <!-- Service 5 -->
                 <div class="service-card">
-                     <div class="mb-4 text-emerald-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
-                    </div>
+                     <div class="mb-4 text-emerald-500"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg></div>
                     <h3 class="text-xl font-semibold text-slate-800 mb-2">Website Development</h3>
                     <p class="text-slate-600">Creating professional, responsive, and user-friendly websites.</p>
                 </div>
-                <!-- Service 6 -->
                 <div class="service-card">
-                     <div class="mb-4 text-emerald-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                    </div>
+                     <div class="mb-4 text-emerald-500"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg></div>
                     <h3 class="text-xl font-semibold text-slate-800 mb-2">E-commerce Management</h3>
                     <p class="text-slate-600">Full-service store management from catalog to customer service.</p>
                 </div>
             </div>
         </section>
-
 
         <!-- Portfolio Section -->
         <section id="portfolio" class="py-16">
@@ -118,14 +103,51 @@
 
             <div class="space-y-20">
 
-                <!-- Case Study 1: Posmea.com -->
-                <div class="case-study-card hover:scale-100">
+                 <!-- Case Study 1: Sick-Motos.com -->
+                <div class="case-study-card">
                     <div class="md:flex">
                         <div class="md:w-1/2">
-                            <img src="https://placehold.co/600x550/10b981/ffffff?text=Posmea.com" alt="Posmea.com Case Study" class="w-full h-full object-cover">
+                            <img src="https://drive.google.com/file/d/1FzE3tW9uEDXUV3o0MxsmpRYnvgfJLVzW/view?usp=sharing" alt="Custom motorcycle in a workshop" class="w-full h-full object-cover">
                         </div>
                         <div class="md:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
-                            <h3 class="text-2xl lg:text-3xl font-bold text-slate-800 mb-2">Posmea.com</h3>
+                            <h3 class="text-2xl lg:text-3xl font-bold text-slate-800 mb-2">Sick-Motos.com, Germany</h3>
+                            <p class="text-emerald-600 font-semibold mb-6">E-commerce Launch and Market Entry</p>
+                            
+                            <div class="mb-6">
+                                <h4 class="font-semibold text-slate-700 mb-2">The Challenge:</h4>
+                                <p class="text-slate-600">The client needed to launch their motorcycle parts e-commerce store in the competitive German market, facing low brand awareness, no search engine ranking, and the need for a new platform.</p>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <h4 class="font-semibold text-slate-700 mb-2">The Solution:</h4>
+                                <p class="text-slate-600">I developed and launched a new Shopify store optimized for the local market. I then executed a targeted performance marketing strategy, focusing on high-intent Google Ads campaigns and foundational SEO to build organic visibility and drive initial sales.</p>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-slate-700 mb-3">The Results:</h4>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div class="stat-card">
+                                        <p class="text-3xl font-bold text-emerald-600">300%</p>
+                                        <p class="text-sm font-medium text-slate-700">Sales Growth (YoY)</p>
+                                    </div>
+                                    <div class="stat-card">
+                                        <p class="text-3xl font-bold text-emerald-600">4.5x</p>
+                                        <p class="text-sm font-medium text-slate-700">Return on Ad Spend</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2: Posmea.com -->
+                <div class="case-study-card">
+                    <div class="md:flex">
+                         <div class="md:w-1/2 md:order-2">
+                            <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="POS system in a retail environment" class="w-full h-full object-cover">
+                        </div>
+                        <div class="md:w-1/2 md:order-1 p-8 lg:p-12 flex flex-col justify-center">
+                            <h3 class="text-2xl lg:text-3xl font-bold text-slate-800 mb-2">Posmea.com, UAE</h3>
                             <p class="text-emerald-600 font-semibold mb-6">Integrated Digital Strategy for Sales Growth</p>
                             
                             <div class="mb-6">
@@ -155,14 +177,14 @@
                     </div>
                 </div>
 
-                <!-- Case Study 2: Salmanstores.com -->
-                <div class="case-study-card hover:scale-100">
+                <!-- Case Study 3: Salmanstores.com -->
+                <div class="case-study-card">
                     <div class="md:flex">
-                        <div class="md:w-1/2 md:order-2">
-                             <img src="https://placehold.co/600x600/34d399/ffffff?text=Salmanstores.com" alt="Salmanstores.com Case Study" class="w-full h-full object-cover">
+                        <div class="md:w-1/2">
+                             <img src="https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fashion and electronics products in a retail setting" class="w-full h-full object-cover">
                         </div>
-                        <div class="md:w-1/2 md:order-1 p-8 lg:p-12 flex flex-col justify-center">
-                            <h3 class="text-2xl lg:text-3xl font-bold text-slate-800 mb-2">Salmanstores.com / Roumaan.com</h3>
+                        <div class="md:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+                            <h3 class="text-2xl lg:text-3xl font-bold text-slate-800 mb-2">Salmanstores.com / Roumaan.com, Oman</h3>
                             <p class="text-emerald-600 font-semibold mb-6">Strategic Market Expansion & Revenue Diversification</p>
                             
                             <div class="mb-6">
@@ -194,14 +216,34 @@
 
             </div>
         </section>
+        
+        <!-- Tools & Technologies Section -->
+        <section id="tools" class="py-16 bg-slate-100">
+            <h2 class="section-title">My Tech Stack & Toolset</h2>
+            <p class="section-subtitle">I leverage industry-leading tools to drive results, from analytics and advertising to e-commerce and creative design.</p>
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-wrap justify-center items-center gap-x-12 sm:gap-x-16 gap-y-10">
+                    <img src="https://www.vectorlogo.zone/logos/google_ads/google_ads-ar21.svg" alt="Google Ads Logo" class="tool-logo" title="Google Ads">
+                    <img src="https://www.vectorlogo.zone/logos/google_analytics/google_analytics-ar21.svg" alt="Google Analytics Logo" class="tool-logo" title="Google Analytics">
+                    <img src="https://www.vectorlogo.zone/logos/meta/meta-ar21.svg" alt="Meta Logo" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" title="Meta Ads">
+                    <img src="https://www.vectorlogo.zone/logos/shopify/shopify-ar21.svg" alt="Shopify Logo" class="tool-logo" title="Shopify">
+                    <img src="https://www.vectorlogo.zone/logos/semrush/semrush-ar21.svg" alt="SEMrush Logo" class="tool-logo" title="SEMrush">
+                    <img src="https://assets-global.website-files.com/5f333357597143168d189473/620402a704423b3734e11746_Ubersuggest%20logo%20(1).svg" alt="Ubersuggest Logo" class="tool-logo" title="Ubersuggest">
+                    <img src="https://www.vectorlogo.zone/logos/canva/canva-ar21.svg" alt="Canva Logo" class="tool-logo" title="Canva">
+                    <img src="https://www.vectorlogo.zone/logos/screamingfrog/screamingfrog-icon.svg" alt="Screaming Frog Logo" class="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" title="Screaming Frog">
+                    <img src="https://www.vectorlogo.zone/logos/wordpress/wordpress-ar21.svg" alt="WordPress Logo" class="tool-logo" title="WordPress">
+                </div>
+            </div>
+        </section>
+
 
         <!-- Education & Certifications Section -->
-        <section id="education" class="py-16 bg-slate-50">
+        <section id="education" class="py-16 bg-white">
             <h2 class="section-title">Education & Certifications</h2>
             <p class="section-subtitle">My qualifications and commitment to continuous learning in the digital space.</p>
             <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Education Card -->
-                <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="bg-slate-50 p-8 rounded-xl shadow-sm">
                     <h3 class="text-xl font-semibold text-slate-800 mb-4">Formal Education</h3>
                     <ul class="space-y-4 text-slate-600">
                         <li class="flex items-start">
@@ -221,7 +263,7 @@
                     </ul>
                 </div>
                 <!-- Certifications Card -->
-                <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="bg-slate-50 p-8 rounded-xl shadow-sm">
                     <h3 class="text-xl font-semibold text-slate-800 mb-4">Professional Certifications</h3>
                      <ul class="space-y-4 text-slate-600">
                         <li class="flex items-center">
@@ -243,10 +285,10 @@
 
 
         <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-white">
+        <section id="contact" class="py-20 bg-slate-100">
             <div class="text-center">
                 <h2 class="text-3xl font-bold text-slate-800">Ready to Grow Your Business?</h2>
-                <p class="text-slate-600 mt-4 mb-8 max-w-xl mx-auto">Let's connect and discuss how my expertise in e-commerce and digital marketing can help you achieve your goals.</p>
+                <p class="text-slate-600 mt-4 mb-8 max-w-xl mx-auto">Let's connect and discuss how my expertise in e-commerce and performance marketing can help you achieve your goals.</p>
                 <a href="mailto:mailsamnjacob@gmail.com" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors">
                     Get In Touch
                 </a>
